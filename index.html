@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="display: flex; justify-content: center; align-items: center; background-color:blanchedalmond">
+    
+    <section>
+        <form>
+            <label for="email">Email</label>
+            <input id="email" onchange="solve()" class="data" type="email" placeholder="Example@email.com">
+            <p>Make sure email is more than 3 characters and has @ and a .</p>
+            <label for="password">Password</label>
+            <input id="password" onchange="solve()" class="data" type="password" placeholder="Your Password">
+            <p>Make sure password is more than 8 characters.</p>
+            <div style="display: none;">All good to go!!</div>
+            <button onclick="signup()" type="submit">Submit</button>
+        </form>
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
